@@ -1,0 +1,404 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+
+/* ####################   Start Box #####################*/
+/* Makes the element a flex container (children line up in a row) */
+.d-flex {
+  display: flex;
+}
+
+/* Allows flex items to wrap onto the next line when they run out of space */
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+/* Vertically centers flex items along the cross axis */
+.align-center {
+  align-items: center;
+}
+
+/* Pushes flex items to the edges (first left, last right) */
+.space-between {
+  justify-content: space-between;
+}
+
+/* Makes the element a grid container */
+.d-grid {
+  display: grid;
+}
+
+/* Adds a 20px gap between grid/flex items */
+.gap-20 {
+  gap: 20px;
+}
+
+/* Makes the element a block (takes the full width of its line) */
+.d-block {
+  display: block;
+}
+
+/* On screens ≤767px: makes the element a block */
+@media (max-width: 767px) {
+  .block-mobile {
+    display: block;
+  }
+
+  /* On screens ≤767px: hides the element */
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/* End Box */
+
+
+/* ####################  Start Padding + Margin  ####################*/
+/* Adds 10px padding on all sides */
+.p-10 {
+  padding: 10px;
+}
+
+/* Adds 15px padding on all sides */
+.p-15 {
+  padding: 15px;
+}
+
+/* Adds 20px padding on all sides */
+.p-20 {
+  padding: 20px;
+}
+
+/* Adds 10px padding on the top only */
+.pt-10 {
+  padding-top: 10px;
+}
+
+/* Adds 15px padding on the top only */
+.pt-15 {
+  padding-top: 15px;
+}
+
+/* Adds 20px padding on the top only */
+.pt-20 {
+  padding-top: 20px;
+}
+
+/* Adds 10px padding on the bottom only */
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+/* Adds 15px padding on the bottom only */
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+/* Adds 20px padding on the bottom only */
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+/* Adds 15px padding on the left only */
+.pl-15 {
+  padding-left: 15px;
+}
+
+/* Removes all margins */
+.m-0 {
+  margin: 0;
+}
+
+/* Adds 15px margin on all sides */
+.m-15 {
+  margin: 15px;
+}
+
+/* Adds 20px margin on all sides */
+.m-20 {
+  margin: 20px;
+}
+
+/* Removes the top margin */
+.mt-0 {
+  margin-top: 0;
+}
+
+/* Adds 5px margin on the top only */
+.mt-5 {
+  margin-top: 5px;
+}
+
+/* Adds 10px margin on the top only */
+.mt-10 {
+  margin-top: 10px;
+}
+
+/* Adds 15px margin on the top only */
+.mt-15 {
+  margin-top: 15px;
+}
+
+/* Adds 20px margin on the top only */
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* Adds 25px margin on the top only */
+.mt-25 {
+  margin-top: 25px;
+}
+
+/* Adds 10px margin on the right only */
+.mr-10 {
+  margin-right: 10px;
+}
+
+/* Adds 15px margin on the right only */
+.mr-15 {
+  margin-right: 15px;
+}
+
+/* Adds 5px margin on the bottom only */
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+/* Adds 10px margin on the bottom only */
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+/* Adds 15px margin on the bottom only */
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+/* Adds 20px margin on the bottom only */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Adds 25px margin on the bottom only */
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+/* End Padding + Margin */
+
+
+/* #################### Start Color ####################*/
+/* Sets text color to black */
+.c-black {
+  color: black;
+}
+
+/* Sets text color to white */
+.c-white {
+  color: white;
+}
+
+/* Sets text color to the grey variable */
+.c-grey {
+  color: var(--grey-color);
+}
+
+/* Sets text color to the red variable */
+.c-red {
+  color: var(--red-color);
+}
+
+/* Sets text color to the green variable */
+.c-green {
+  color: var(--green-color);
+}
+
+/* Sets text color to the blue variable */
+.c-blue {
+  color: var(--blue-color);
+}
+
+/* Sets text color to the orange variable */
+.c-orange {
+  color: var(--orange-color);
+}
+
+/* Sets background color to red */
+.bg-red {
+  background-color: var(--red-color);
+}
+
+/* Sets background color to green */
+.bg-green {
+  background-color: var(--green-color);
+}
+
+/* Sets background color to blue */
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+/* Sets background color to orange */
+.bg-orange {
+  background-color: var(--orange-color);
+}
+
+/* Sets background color to white */
+.bg-white {
+  background-color: white;
+}
+
+/* Sets background color to light grey (#eee) */
+.bg-eee {
+  background-color: #eee;
+}
+
+/* End Color */
+
+
+/* ####################  Start Position ####################*/
+/* Makes the element a positioning context for absolute children */
+.p-relative {
+  position: relative;
+}
+
+/* Takes the element out of flow and positions it relative to its nearest positioned ancestor */
+.p-absolute {
+  position: absolute;
+}
+
+/* End Position */
+
+
+/* ####################  Start Font  ####################*/
+/* Centers text horizontally */
+.txt-c {
+  text-align: center;
+}
+
+/* Sets font size to 13px */
+.fs-13 {
+  font-size: 13px;
+}
+
+/* Sets font size to 14px */
+.fs-14 {
+  font-size: 14px;
+}
+
+/* Sets font size to 15px */
+.fs-15 {
+  font-size: 15px;
+}
+
+/* Sets font size to 25px */
+.fs-25 {
+  font-size: 25px;
+}
+
+/* Makes text bold */
+.fw-bold {
+  font-weight: bold;
+}
+
+/* On screens ≤767px: centers the text */
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
+}
+
+/* End Font */
+
+
+/* ####################  Start Border #################### */
+/* Rounds corners with a 6px radius */
+.rad-6 {
+  border-radius: 6px;
+}
+
+/* Rounds corners with a 10px radius */
+.rad-10 {
+  border-radius: 10px;
+}
+
+/* Rounds corners fully (50%) to make a circle when width = height */
+.rad-half {
+  border-radius: 50%;
+}
+
+/* Removes any border */
+.b-none {
+  border: none;
+}
+
+/* Adds a 1px solid #ccc border */
+.border-ccc {
+  border: 1px solid #ccc;
+}
+
+/* Adds a 1px solid #eee border */
+.border-eee {
+  border: 1px solid #eee;
+}
+
+/* End Border */
+
+
+/* #################### Start Width + Height ####################*/
+/* Makes the element take 100% of its parent's width */
+.w-full {
+  width: 100%;
+}
+
+/* Sets a fixed width of 100px */
+.w-100 {
+  width: 100px;
+}
+
+/* Makes the width fit the content (shrink-to-fit) */
+.w-fit {
+  width: fit-content;
+}
+
+/* Makes the element take 100% of its parent's height */
+.h-full {
+  height: 100%;
+}
+
+/* Sets a fixed height of 100px */
+.h-100 {
+  height: 100px;
+}
+
+/* End Width + Height */
+
+
+/* #################### Start Components ####################*/
+/* Centers children both horizontally and vertically using flex */
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Spreads children apart horizontally and centers them vertically */
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Gives the element a button-like shape (padding + rounded corners) */
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* End Components */
